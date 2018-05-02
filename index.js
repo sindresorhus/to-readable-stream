@@ -1,5 +1,5 @@
 'use strict';
-const {Readable} = require('stream');
+const {Readable} = require('readable-stream');
 
 module.exports = input => (
 	new Readable({

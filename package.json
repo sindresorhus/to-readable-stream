@@ -36,5 +36,8 @@
 		"ava": "*",
 		"get-stream": "^3.0.0",
 		"xo": "*"
+	},
+	"dependencies": {
+		"readable-stream": "^2.3.6"
 	}
 }
