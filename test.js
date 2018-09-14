@@ -1,4 +1,4 @@
-import {Readable} from 'stream';
+import {Readable} from 'readable-stream';
 import test from 'ava';
 import getStream from 'get-stream';
 import toReadableStream from '.';
