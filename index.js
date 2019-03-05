@@ -1,8 +1,8 @@
 'use strict';
-const {Readable} = require('stream');
+const {Readable: ReadableStream} = require('stream');
 
 module.exports = input => (
-	new Readable({
+	new ReadableStream({
 		read() {
 			this.push(input);
 			this.push(null);
