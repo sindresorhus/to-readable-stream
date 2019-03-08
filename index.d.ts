@@ -1,5 +1,5 @@
 /// <reference types="node"/>
-import {Readable} from 'stream';
+import {Readable as ReadableStream} from 'stream';
 
 /**
  * Convert a `string`/`Buffer`/`Uint8Array` to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
@@ -8,4 +8,4 @@ import {Readable} from 'stream';
  */
 export default function toReadableStream(
 	input: string | Buffer | Uint8Array
-): Readable;
+): ReadableStream;
