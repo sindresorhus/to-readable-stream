@@ -1,7 +1,7 @@
 'use strict';
 const {Readable: ReadableStream} = require('stream');
 
-module.exports = input => (
+const toReadableStream = input => (
 	new ReadableStream({
 		read() {
 			this.push(input);
@@ -9,3 +9,6 @@ module.exports = input => (
 		}
 	})
 );
+
+module.exports = toReadableStream;
+module.exports.default = toReadableStream;
