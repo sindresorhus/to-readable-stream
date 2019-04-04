@@ -1,4 +1,4 @@
-import toReadableStream from '.';
+import toReadableStream = require('.');
 
 toReadableStream('🦄🌈').pipe(process.stdout);
 toReadableStream(Buffer.from('🦄🌈')).pipe(process.stdout);
