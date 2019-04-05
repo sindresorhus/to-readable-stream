@@ -11,4 +11,5 @@ const toReadableStream = input => (
 );
 
 module.exports = toReadableStream;
+// TODO: Remove this for the next major release
 module.exports.default = toReadableStream;
