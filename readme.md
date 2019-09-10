@@ -27,7 +27,7 @@ Returns a [`stream.Readable`](https://nodejs.org/api/stream.html#stream_readable
 
 #### input
 
-Type: `string` `Buffer` `Uint8Array`
+Type: `string | Buffer | Uint8Array`
 
 Value to convert to a stream.
 
@@ -37,6 +37,14 @@ Value to convert to a stream.
 - [into-stream](https://github.com/sindresorhus/into-stream) - More advanced version of this module
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-to-readable-stream?utm_source=npm-to-readable-stream&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
