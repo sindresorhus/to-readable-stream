@@ -1,14 +1,14 @@
-# to-readable-stream [![Build Status](https://travis-ci.org/sindresorhus/to-readable-stream.svg?branch=master)](https://travis-ci.org/sindresorhus/to-readable-stream)
+# to-readable-stream [![Build Status](https://travis-ci.com/sindresorhus/to-readable-stream.svg?branch=master)](https://travis-ci.com/github/sindresorhus/to-readable-stream)
 
 > Convert a string/Buffer/Uint8Array to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams)
 
+If you target Node.js 12 or later, you can use [`stream.Readable#from()`](https://nodejs.org/api/stream.html#stream_stream_readable_from_iterable_options) instead.
 
 ## Install
 
 ```
 $ npm install to-readable-stream
 ```
-
 
 ## Usage
 
@@ -17,7 +17,6 @@ const toReadableStream = require('to-readable-stream');
 
 toReadableStream('🦄🌈').pipe(process.stdout);
 ```
-
 
 ## API
 
@@ -30,7 +29,6 @@ Returns a [`stream.Readable`](https://nodejs.org/api/stream.html#stream_readable
 Type: `string | Buffer | Uint8Array`
 
 Value to convert to a stream.
-
 
 ## Related
 
