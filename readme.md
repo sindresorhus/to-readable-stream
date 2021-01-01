@@ -1,4 +1,4 @@
-# to-readable-stream [![Build Status](https://travis-ci.com/sindresorhus/to-readable-stream.svg?branch=master)](https://travis-ci.com/github/sindresorhus/to-readable-stream)
+# to-readable-stream
 
 > Convert a string/Buffer/Uint8Array to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams)
 
