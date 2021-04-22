@@ -1,6 +1,6 @@
 {
 	"name": "to-readable-stream",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "Convert a string/Buffer/Uint8Array to a readable stream",
 	"license": "MIT",
 	"repository": "sindresorhus/to-readable-stream",
