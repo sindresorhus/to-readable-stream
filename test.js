@@ -1,7 +1,7 @@
 import {Readable as ReadableStream} from 'stream';
 import test from 'ava';
 import getStream from 'get-stream';
-import toReadableStream from '.';
+import toReadableStream from './index.js';
 
 const fixture = 'foo bar';
 

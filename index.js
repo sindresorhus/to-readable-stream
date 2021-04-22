@@ -1,15 +1,10 @@
-'use strict';
-const {Readable: ReadableStream} = require('stream');
+import {Readable as ReadableStream} from 'node:stream';
 
-const toReadableStream = input => (
-	new ReadableStream({
+export default function toReadableStream(value) {
+	return new ReadableStream({
 		read() {
-			this.push(input);
+			this.push(value);
 			this.push(null);
 		}
-	})
-);
-
-module.exports = toReadableStream;
-// TODO: Remove this for the next major release
-module.exports.default = toReadableStream;
+	});
+}

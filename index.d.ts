@@ -1,27 +1,15 @@
-/// <reference types="node"/>
-import {Readable as ReadableStream} from 'stream';
+import {Readable as ReadableStream} from 'node:stream';
 
-declare const toReadableStream: {
-	/**
-	Convert a `string`/`Buffer`/`Uint8Array` to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
+/**
+Convert a `string`/`Buffer`/`Uint8Array` to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
 
-	@param input - Value to convert to a stream.
+@param value - Value to convert to a stream.
 
-	@example
-	```
-	import toReadableStream = require('to-readable-stream');
+@example
+```
+import toReadableStream from 'to-readable-stream';
 
-	toReadableStream('🦄🌈').pipe(process.stdout);
-	```
-	*/
-	(input: string | Buffer | Uint8Array): ReadableStream;
-
-	// TODO: Remove this for the next major release, refactor the whole definition to:
-	// declare function toReadableStream(
-	// 	input: string | Buffer | Uint8Array
-	// ): ReadableStream;
-	// export = toReadableStream;
-	default: typeof toReadableStream;
-};
-
-export = toReadableStream;
+toReadableStream('🦄🌈').pipe(process.stdout);
+```
+*/
+export default function toReadableStream(value: string | Buffer | Uint8Array): ReadableStream;

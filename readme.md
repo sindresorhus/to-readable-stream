@@ -13,18 +13,18 @@ $ npm install to-readable-stream
 ## Usage
 
 ```js
-const toReadableStream = require('to-readable-stream');
+import toReadableStream from 'to-readable-stream';
 
 toReadableStream('🦄🌈').pipe(process.stdout);
 ```
 
 ## API
 
-### toReadableStream(input)
+### toReadableStream(value)
 
 Returns a [`stream.Readable`](https://nodejs.org/api/stream.html#stream_readable_streams).
 
-#### input
+#### value
 
 Type: `string | Buffer | Uint8Array`
 
@@ -33,7 +33,6 @@ Value to convert to a stream.
 ## Related
 
 - [into-stream](https://github.com/sindresorhus/into-stream) - More advanced version of this module
-
 
 ---
 
