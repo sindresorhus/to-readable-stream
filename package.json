@@ -37,7 +37,7 @@
 		"pull"
 	],
 	"devDependencies": {
-		"ava": "^3.15.0",
+		"ava": "^4.3.1",
 		"get-stream": "^6.0.1",
 		"tsd": "^0.14.0",
 		"xo": "^0.39.1"
