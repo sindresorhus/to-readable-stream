@@ -6,8 +6,8 @@ If you target Node.js 12 or later, you can use [`stream.Readable#from()`](https:
 
 ## Install
 
-```
-$ npm install to-readable-stream
+```sh
+npm install to-readable-stream
 ```
 
 ## Usage
@@ -32,16 +32,5 @@ Value to convert to a stream.
 
 ## Related
 
-- [into-stream](https://github.com/sindresorhus/into-stream) - More advanced version of this module
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-to-readable-stream?utm_source=npm-to-readable-stream&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
+- [into-stream](https://github.com/sindresorhus/into-stream) - More advanced version of this package
+- [get-stream](https://github.com/sindresorhus/get-stream) - The opposite of this package
