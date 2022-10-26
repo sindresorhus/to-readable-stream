@@ -27,7 +27,7 @@ Returns a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/Re
 
 #### value
 
-Value to convert to a stream.
+The value to convert to a stream.
 
 ## Related
 

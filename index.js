@@ -3,6 +3,6 @@ export default function toReadableStream(value) {
 		start(controller) {
 			controller.enqueue(value);
 			controller.close();
-		}
+		},
 	});
 }
