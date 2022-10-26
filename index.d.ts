@@ -1,5 +1,5 @@
 /**
-Convert a `string`/`Buffer`/`Uint8Array` to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream).
+Convert a value to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream).
 
 @param value - Value to convert to a stream.
 

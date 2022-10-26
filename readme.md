@@ -1,6 +1,6 @@
 # to-readable-stream
 
-> Convert a string/Buffer/Uint8Array to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream)
+> Convert a value to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream)
 
 Not to be confused with [Node.js `stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable), in which case, [`stream.Readable#from()`](https://nodejs.org/api/stream.html#stream_stream_readable_from_iterable_options) should be used instead.
 
