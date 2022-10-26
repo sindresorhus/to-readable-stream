@@ -1,7 +1,7 @@
 {
 	"name": "to-readable-stream",
 	"version": "3.0.0",
-	"description": "Convert a string/Buffer/Uint8Array to a readable stream",
+	"description": "Convert a string/Buffer/Uint8Array to a ReadableStream",
 	"license": "MIT",
 	"repository": "sindresorhus/to-readable-stream",
 	"funding": "https://github.com/sponsors/sindresorhus",
@@ -13,7 +13,7 @@
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
-		"node": ">=12"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -41,5 +41,13 @@
 		"get-stream": "^6.0.1",
 		"tsd": "^0.14.0",
 		"xo": "^0.39.1"
+	},
+	"xo": {
+		"env": "browser"
+	},
+	"tsd": {
+		"compilerOptions": {
+			"lib": ["dom"]
+		}
 	}
 }

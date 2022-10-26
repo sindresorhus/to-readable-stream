@@ -1,4 +1,4 @@
-import {Readable as ReadableStream} from 'stream';
+import {Buffer} from 'node:buffer';
 import test from 'ava';
 import getStream from 'get-stream';
 import toReadableStream from './index.js';

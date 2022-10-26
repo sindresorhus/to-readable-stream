@@ -1,8 +1,8 @@
 # to-readable-stream
 
-> Convert a string/Buffer/Uint8Array to a [Node.js `stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable), which should not be confused with [`ReadableStream`](https://nodejs.org/api/webstreams.html#webstreams_class_readablestream)
+> Convert a string/Buffer/Uint8Array to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream)
 
-If you target Node.js 12 or later, you can use [`stream.Readable#from()`](https://nodejs.org/api/stream.html#stream_stream_readable_from_iterable_options) instead.
+Not to be confused with [Node.js `stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable), in which case, [`stream.Readable#from()`](https://nodejs.org/api/stream.html#stream_stream_readable_from_iterable_options) should be used instead.
 
 ## Install
 
@@ -15,18 +15,17 @@ npm install to-readable-stream
 ```js
 import toReadableStream from 'to-readable-stream';
 
-toReadableStream('🦄🌈').pipe(process.stdout);
+toReadableStream('🦄🌈');
+//=> ReadableStream<'🦄🌈'>
 ```
 
 ## API
 
 ### toReadableStream(value)
 
-Returns a [`stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable).
+Returns a [`ReadableStream`](https://nodejs.org/api/webstreams.html#webstreams_class_readablestream).
 
 #### value
-
-Type: `string | Buffer | Uint8Array`
 
 Value to convert to a stream.
 

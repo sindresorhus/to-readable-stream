@@ -1,7 +1,5 @@
-import {Readable as ReadableStream} from 'node:stream';
-
 /**
-Convert a `string`/`Buffer`/`Uint8Array` to a [readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
+Convert a `string`/`Buffer`/`Uint8Array` to a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream).
 
 @param value - Value to convert to a stream.
 
@@ -9,7 +7,8 @@ Convert a `string`/`Buffer`/`Uint8Array` to a [readable stream](https://nodejs.o
 ```
 import toReadableStream from 'to-readable-stream';
 
-toReadableStream('🦄🌈').pipe(process.stdout);
+toReadableStream('🦄🌈');
+//=> ReadableStream<'🦄🌈'>
 ```
 */
-export default function toReadableStream(value: string | Buffer | Uint8Array): ReadableStream;
+export default function toReadableStream<Value>(value: Value): ReadableStream<Value>;
