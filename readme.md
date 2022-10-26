@@ -23,7 +23,7 @@ toReadableStream('🦄🌈');
 
 ### toReadableStream(value)
 
-Returns a [`ReadableStream`](https://nodejs.org/api/webstreams.html#webstreams_class_readablestream).
+Returns a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream).
 
 #### value
 
